@@ -30,8 +30,6 @@ $.fn.S3Uploader = (options) ->
   forms_for_submit = []
   if settings.click_submit_target
     settings.click_submit_target.click ->
-      $('body').prepend("<iframe name='iframecrop' id='iframecrop'></iframe><div id='md-overlay'></div>");
-      $('#iframecrop').contents().find('body').html('<p>PLEASE WAIT</p>');
       form.submit() for form in forms_for_submit
       false
 
