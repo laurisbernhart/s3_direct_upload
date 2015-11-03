@@ -43,7 +43,7 @@ module S3DirectUpload
         {
           id: @options[:id],
           class: @options[:class],
-          target: @options[:target],
+          # target: @options[:target],
           method: "post",
           authenticity_token: false,
           multipart: true,
